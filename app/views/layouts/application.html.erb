@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Workspace</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" href="styles/font-awesome-4.7.0/css/font-awesome.css"></link>
+  <link rel="stylesheet" href="styles/styles.css"></link>
+  <%= csrf_meta_tags %>
+</head>
+
+<style>
+body {font-size:30px};
+</style>
+<body class="flexbox">
+    <div class="static">
+            <p><i class="fa fa-bars"></i></p>
+            <br></br>
+            <p><i class="fa fa-home"></i></p>
+            <br></br>
+            <p><i class="fa fa-search"></i></p>
+            <br></br>
+            <p><i class="fa fa-tags"></i></p>
+            <br></br>
+            <p><i class="fa fa-female" aria-hidden="true"></i></p>
+            <br></br>
+            <p><i class="fa fa-snowflake-o" aria-hidden="true"></i></p>
+             <br></br>
+            <p><i class="fa fa-hand-spock-o" aria-hidden="true"></i></p>
+    </div >
+    <nav class="static_2">
+        <a href="Emma.html">Emma</a>
+        <br></br>
+        <br></br>
+        <a href="About.htmt">About</a>
+        <br></br>
+        <br></br>
+        <a href="Experience.html">Experience</a>
+        <br></br>
+        <br></br>
+        <a href="Projects.html">Projects</a>
+        <br></br>
+        <br></br>
+        <a href="Travels.html">Travel</a>
+    </nav>
+    <div class="body">
+        Blog content......
+    </div>
+<main>
+        <p>blog content</p>
+        <h1>Blog post</h1>
+    </main>
+    <button>Hide</button>
+    <script src="https://collaborate.uxpin.com/bad1a7c3f4267dc92c708b8240f49289bf380b85#/pages/69518156/nosidebar"></script>
+    <script src="blog.js">
+    </script>
+
+<%= yield %> 
+</body>
+</html>
