@@ -12,8 +12,8 @@
  *
  *= require_tree .
  *= require_self
- */
- 
+*/
+
 .flexbox {
     display: flex; 
     font-size: larger
