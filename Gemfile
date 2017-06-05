@@ -43,5 +43,15 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+   # Use sqlite3 as the database for Active Record
+  gem 'sqlite3' #SQLite3 was not meant to be used in production and Heroku doesn't support it. We're going to be adding a different SQL database, Postgres, to our project. Postgres is more robust, more scalable, and is supported by Heroku.. first, move the gem 'sqlite3' into the group :development section. This will ensure that we only use SQLite3 when we're in the development environment (on your local machine or on Cloud9) The section should now look like this:
 end
 
+group :production do
+  gem 'pg'
+end
+#Ideally, Rails does not serve up assets. That heavy lifting should be delegated to a CDN. But in our case, we need to tell Rails to serve up our JS/CSS/Images directly from our server. We'll use the rails_12factor gem.
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end

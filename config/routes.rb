@@ -2,6 +2,8 @@
 The routes.rb file defines the actions available in the applications and the type of action such as get, post, and patch.
 =end 
 Rails.application.routes.draw do
+  get '/:page' => "pages#show"
+
     root "posts#index"
 
     resources :posts #get URLs and Actions for free

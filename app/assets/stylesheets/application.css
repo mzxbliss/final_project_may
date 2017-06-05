@@ -26,16 +26,19 @@
 }
 .static_2 {
     flex: 0 0 60px;
-    font-family: inherit
-    font-size: Larger;
+    color: white;
+    font-family: inherit;
+    font-size: medium;
     background-color: #AA1E38;
 }
-.body {
+.main-content {
     font-family: Arial;
     background-color: white;
     font-style: normal;
     font-size:15px;
+    padding-left:5%;
 }
+/* this change screen dynamically when you minimize*/
 
 @media screen and (max-width:480px) {
     .container dic span {
